@@ -67,13 +67,14 @@
     /* BUTON */
     .btn {
       display: inline-block;
-      margin-top: 30px;
+      margin: 10px 10px 0 0;
       padding: 14px 28px;
       background-color: #2563eb;
       color: #ffffff;
       border-radius: 10px;
       font-weight: 600;
       transition: background-color 0.2s ease, transform 0.2s ease;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -111,6 +112,21 @@
       font-size: 15px;
       color: #374151;
     }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1e3a8a;
+      color: #ffffff;
+      margin-top: 60px;
+    }
+
+    footer span {
+      display: block;
+      font-size: 14px;
+      margin-top: 8px;
+      opacity: 0.85;
+    }
   </style>
 </head>
 
@@ -124,6 +140,7 @@
     we akademik ýazgy nusgalary
   </p>
 </header>
+
 <!-- PLATFORMA TANITIMI -->
 <section>
   <h2>Platforma barada</h2>
@@ -196,8 +213,8 @@
         Ders boýunça taýýarlanan düşündiriş materialy.
         Akademik gurluş, düşnükli dil.
       </p>
-      <p><strong>Format:</strong> El yazma </p>
-      <p><strong>Bahasy:</strong> 40 TMT</p>
+      <p><strong>Format:</strong> Word / PDF</p>
+      <p><strong>Bahasy:</strong> 2 USD</p>
     </div>
 
     <div class="card">
@@ -216,11 +233,12 @@
         Birden köp ders üçin taýýarlanan okuw materiallary.
         Toplumlaýyn çözgüt.
       </p>
-      <p><strong>Format:</strong> El yazma</p>
+      <p><strong>Format:</strong> Word / PDF</p>
       <p><strong>Bahasy:</strong> Ylalaşyk boýunça</p>
     </div>
   </div>
 </section>
+
 <!-- HABARLAŞMA -->
 <section>
   <div class="card" style="text-align:center;">
@@ -252,6 +270,13 @@
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer>
+  © 2026 Talyp Kömek
+  <span>Okuw goldawy platformasy · Akademik düzgünlere hormat goýulýar</span>
+</footer>
+
+<!-- Habarlaşma Skripti -->
 <script>
   function openInstagramDM() {
     window.location.href = "instagram://user?username=talypkomekadmin";
@@ -261,7 +286,7 @@
   }
 
   function openMessenger() {
-    window.location.href = "fb-messenger://user-thread/1000123456789"; // Messenger ID gerek
+    window.location.href = "fb-messenger://user-thread/1000123456789";
     setTimeout(function() {
       window.location.href = "https://m.me/talypkomekadmin";
     }, 700);
@@ -278,29 +303,6 @@
     window.location.href = "tel:+99371511677";
   }
 </script>
-<!-- FOOTER -->
-<footer>
-  © 2026 Talyp Kömek
-  <span>Okuw goldawy platformasy · Akademik düzgünlere hormat goýulýar</span>
-</footer>
-
-<!-- INSTAGRAM DM SCRIPT -->
-<script>
-  function openInstagramDM() {
-    // Önce uygulamayı dene
-    window.location.href = "instagram://user?username=talypkomekadmin";
-
-    // Olmazsa web DM'ye düş
-    setTimeout(function () {
-      window.location.href = "https://ig.me/m/talypkomekadmin";
-    }, 700);
-  }
-</script>
 
 </body>
-<style>html{
- color:darkviolet;
- font-size:25px;
- font-weight:600;
-}
-</style><script>/*Here write your javascript code*/</script></html>
+</html>
