@@ -226,13 +226,24 @@
   <div class="card" style="text-align:center;">
     <h2>Habarlaşmak</h2>
     <p>
-      Satyn almak ýa-da goşmaça maglumat almak üçin
-      Instagram arkaly göni habarlaşyp bilersiňiz.
+      Satyn almak ýa-da goşmaça maglumat almak üçin aşakdaky platformalar arkaly habarlaşyp bilersiňiz:
     </p>
 
-    <!-- Instagram DM Button -->
+    <!-- Habarlaşma düwmeleri -->
     <button class="btn" onclick="openInstagramDM()">
       Instagram arkaly habarlaş
+    </button>
+
+    <button class="btn" onclick="openMessenger()">
+      Messenger arkaly habarlaş
+    </button>
+
+    <button class="btn" onclick="openIMO()">
+      IMO arkaly habarlaş
+    </button>
+
+    <button class="btn" onclick="callNumber()">
+      Jaň et
     </button>
 
     <p style="margin-top:15px; font-size:14px; color:#6b7280;">
@@ -241,6 +252,32 @@
   </div>
 </section>
 
+<script>
+  function openInstagramDM() {
+    window.location.href = "instagram://user?username=talypkomekadmin";
+    setTimeout(function () {
+      window.location.href = "https://ig.me/m/talypkomekadmin";
+    }, 700);
+  }
+
+  function openMessenger() {
+    window.location.href = "fb-messenger://user-thread/1000123456789"; // Messenger ID gerek
+    setTimeout(function() {
+      window.location.href = "https://m.me/talypkomekadmin";
+    }, 700);
+  }
+
+  function openIMO() {
+    window.location.href = "imo://chat?number=+99371511677";
+    setTimeout(function() {
+      alert("IMO app açmak başa barmady, telefonyňyzda IMO programmasyny ulanyň.");
+    }, 700);
+  }
+
+  function callNumber() {
+    window.location.href = "tel:+99371511677";
+  }
+</script>
 <!-- FOOTER -->
 <footer>
   © 2026 Talyp Kömek
