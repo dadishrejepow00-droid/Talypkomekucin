@@ -67,14 +67,13 @@
     /* BUTON */
     .btn {
       display: inline-block;
-      margin: 10px 10px 0 0;
+      margin-top: 30px;
       padding: 14px 28px;
       background-color: #2563eb;
       color: #ffffff;
       border-radius: 10px;
       font-weight: 600;
       transition: background-color 0.2s ease, transform 0.2s ease;
-      cursor: pointer;
     }
 
     .btn:hover {
@@ -112,21 +111,6 @@
       font-size: 15px;
       color: #374151;
     }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #1e3a8a;
-      color: #ffffff;
-      margin-top: 60px;
-    }
-
-    footer span {
-      display: block;
-      font-size: 14px;
-      margin-top: 8px;
-      opacity: 0.85;
-    }
   </style>
 </head>
 
@@ -140,8 +124,7 @@
     we akademik ýazgy nusgalary
   </p>
 </header>
-
-<!-- PLATFORMA TANITIMI -->
+  <!-- PLATFORMA TANITIMI -->
 <section>
   <h2>Platforma barada</h2>
 
@@ -238,30 +221,18 @@
     </div>
   </div>
 </section>
-
-<!-- HABARLAŞMA -->
+  <!-- HABARLAŞMA -->
 <section>
   <div class="card" style="text-align:center;">
     <h2>Habarlaşmak</h2>
     <p>
-      Satyn almak ýa-da goşmaça maglumat almak üçin aşakdaky platformalar arkaly habarlaşyp bilersiňiz:
+      Satyn almak ýa-da goşmaça maglumat almak üçin
+      Instagram arkaly göni habarlaşyp bilersiňiz.
     </p>
 
-    <!-- Habarlaşma düwmeleri -->
+    <!-- Instagram DM Button -->
     <button class="btn" onclick="openInstagramDM()">
       Instagram arkaly habarlaş
-    </button>
-
-    <button class="btn" onclick="openMessenger()">
-      Messenger arkaly habarlaş
-    </button>
-
-    <button class="btn" onclick="openIMO()">
-      IMO arkaly habarlaş
-    </button>
-
-    <button class="btn" onclick="callNumber()">
-      Jaň et
     </button>
 
     <p style="margin-top:15px; font-size:14px; color:#6b7280;">
@@ -276,31 +247,16 @@
   <span>Okuw goldawy platformasy · Akademik düzgünlere hormat goýulýar</span>
 </footer>
 
-<!-- Habarlaşma Skripti -->
+<!-- INSTAGRAM DM SCRIPT -->
 <script>
   function openInstagramDM() {
+    // Önce uygulamayı dene
     window.location.href = "instagram://user?username=talypkomekadmin";
+
+    // Olmazsa web DM'ye düş
     setTimeout(function () {
       window.location.href = "https://ig.me/m/talypkomekadmin";
     }, 700);
-  }
-
-  function openMessenger() {
-    window.location.href = "fb-messenger://user-thread/1000123456789";
-    setTimeout(function() {
-      window.location.href = "https://m.me/talypkomekadmin";
-    }, 700);
-  }
-
-  function openIMO() {
-    window.location.href = "imo://chat?number=+99371511677";
-    setTimeout(function() {
-      alert("IMO app açmak başa barmady, telefonyňyzda IMO programmasyny ulanyň.");
-    }, 700);
-  }
-
-  function callNumber() {
-    window.location.href = "tel:+99371511677";
   }
 </script>
 
